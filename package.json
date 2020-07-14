@@ -1,0 +1,57 @@
+{
+  "name": "spark",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@testing-library/jest-dom": "^4.2.4",
+    "@testing-library/react": "^9.5.0",
+    "@testing-library/user-event": "^7.2.1",
+    "@types/react": "16.9.23",
+    "chart.js": "2.9.3",
+    "classnames": "2.2.6",
+    "d3": "^5.16.0",
+    "history": "4.10.1",
+    "neo4j-driver": "^4.1.0",
+    "node-sass": "4.13.1",
+    "perfect-scrollbar": "1.5.0",
+    "popoto": "^2.0.18",
+    "prop-types": "15.7.2",
+    "react": "^16.13.1",
+    "react-chartjs-2": "2.9.0",
+    "react-dom": "^16.13.1",
+    "react-force-graph-2d": "^1.17.3",
+    "react-force-graph-3d": "^1.18.4",
+    "react-google-maps": "9.4.5",
+    "react-notification-alert": "0.0.12",
+    "react-router-dom": "5.1.2",
+    "react-scripts": "3.4.1",
+    "reactstrap": "8.4.1",
+    "three": "^0.118.3",
+    "three-spritetext": "^1.5.1"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "install:clean": "rm -rf node_modules/ && rm -rf package-lock.json && npm install && npm start",
+    "compile-scss": "node-sass src/assets/scss/black-dashboard-react.scss src/assets/css/black-dashboard-react.css",
+    "minify-sass": "node-sass src/assets/scss/black-dashboard-react.scss src/assets/css/black-dashboard-react.min.css --output-style compressed",
+    "map-sass": "node-sass src/assets/scss/black-dashboard-react.scss src/assets/css/black-dashboard-react.css --source-map true"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}
