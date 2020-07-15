@@ -16,7 +16,12 @@
 
 */
 import Dashboard from "views/Dashboard.js";
-import CypherViz2 from "views/Icons.js";
+import City from "views/City.js";
+import Developer from "views/Developer.js";
+import ProjectType from "views/ProjectType.js";
+import Team from "views/Team.js";
+import Project from "views/Project.js";
+import All from "views/All.js";
 import Map from "views/Map.js";
 import Notifications from "views/Notifications.js";
 import Rtl from "views/Rtl.js";
@@ -35,7 +40,7 @@ var routes = [
     component: Dashboard,
     layout: "/admin",
     driverNeo4j: false
-  },
+  },/*
   {
     path: "/projects",
     name: "Projects",
@@ -44,24 +49,55 @@ var routes = [
     component: CypherViz,
     layout: "/admin",
     driverNeo4j: true
-  },
+  },*/
   {
-    path: "/icons",
-    name: "Icons",
+    path: "/all",
+    name: "All",
     rtlName: "الرموز",
     icon: "tim-icons icon-atom",
-    component: CypherViz2,
+    component: All,
     layout: "/admin"
   },
-  /*
   {
-    path: "/map",
-    name: "Map",
-    rtlName: "خرائط",
-    icon: "tim-icons icon-pin",
-    component: Map,
+    path: "/cities",
+    name: "Cities",
+    rtlName: "الرموز",
+    icon: "tim-icons icon-puzzle-10",
+    component: City,
     layout: "/admin"
   },
+  {
+    path: "/developers",
+    name: "Developers",
+    rtlName: "الرموز",
+    icon: "tim-icons icon-single-02",
+    component: Developer,
+    layout: "/admin"
+  },
+  {
+    path: "/projects",
+    name: "Projects",
+    rtlName: "الرموز",
+    icon: "tim-icons icon-align-center",
+    component: Project,
+    layout: "/admin"
+  },
+  {
+    path: "/projectTypes",
+    name: "Project Type",
+    rtlName: "خرائط",
+    icon: "tim-icons icon-paper",
+    component: ProjectType,
+    layout: "/admin"
+  },
+  {
+    path: "/teams",
+    name: "Teams",
+    rtlName: "الرموز",
+    icon: "tim-icons icon-atom",
+    component: Team,
+    layout: "/admin"
+  },/*
   {
     path: "/notifications",
     name: "Notifications",

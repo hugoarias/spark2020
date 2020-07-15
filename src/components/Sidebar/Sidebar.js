@@ -106,7 +106,7 @@ class Sidebar extends React.Component {
       }
     }
     return (
-      <div className="sidebar" data={bgColor}>
+      <div className="sidebar" style={{background: 'inherit'}}>
         <div className="sidebar-wrapper" ref="sidebar">
           {logoImg !== null || logoText !== null ? (
             <div className="logo">
